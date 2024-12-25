@@ -62,7 +62,7 @@ export const login = async (req,res) => {
             username: user.username,
             profilePic: user.profilePic,
         });
-
+        
     } catch(error) {
         console.log("error in login controller", error.message)
         res.status(500).json({error: "interrust Server Error"})
